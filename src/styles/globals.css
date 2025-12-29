@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root{
+  color-scheme: dark;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: theme(fontFamily.sans);
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Custom cursor (desktop only) */
+@media (hover:hover) and (pointer:fine){
+  .custom-cursor {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    background: white;
+    opacity: 0.85;
+  }
+}
