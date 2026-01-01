@@ -21,10 +21,10 @@ const validateEmail = (email: string): boolean => {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://www.facebook.com/Mahamoud199', label: 'Facebook', color: 'hover:bg-blue-600' },
+  { icon: Facebook, href: 'https://facebook.com/Mahmoud199', label: 'Facebook', color: 'hover:bg-blue-600' },
   { icon: Twitter, href: 'https://x.com/mmwdmmd554019', label: 'X', color: 'hover:bg-gray-700' },
   { icon: Instagram, href: 'https://www.instagram.com/mahmoud_199mohamed', label: 'Instagram', color: 'hover:bg-pink-600' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/محمود-محمد-080990328', label: 'LinkedIn', color: 'hover:bg-blue-700' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/mahmoud-m-209694024', label: 'LinkedIn', color: 'hover:bg-blue-700' },
 ];
 
 const ContactSection = () => {
@@ -38,22 +38,22 @@ const ContactSection = () => {
   });
 
   const contactInfo = [
-    { 
-      icon: Mail, 
-      label: t('contact.email'), 
+    {
+      icon: Mail,
+      label: t('contact.email'),
       value: 'Mahamud199mohamed@gmail.com',
       href: 'mailto:Mahamud199mohamed@gmail.com'
     },
-    { 
-      icon: Phone, 
-      label: t('contact.phone'), 
+    {
+      icon: Phone,
+      label: t('contact.phone'),
       value: '+249 0904628457',
       subValue: '+249 0110218812',
       href: 'tel:+2490904628457'
     },
-    { 
-      icon: MapPin, 
-      label: t('contact.location'), 
+    {
+      icon: MapPin,
+      label: t('contact.location'),
       value: t('hero.location'),
     },
   ];
@@ -73,7 +73,7 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast.error(t('contact.fillAll') || 'Please fill all fields');
       return;
@@ -106,24 +106,24 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden bg-secondary/20">
       <div className="absolute inset-0 grid-pattern opacity-10" />
-      
+
       {/* Animated glowing background */}
-      <motion.div 
+      <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"
-        animate={{ 
+        animate={{
           scale: [1, 1.2, 1],
           opacity: [0.1, 0.15, 0.1],
         }}
         transition={{ duration: 8, repeat: Infinity }}
       />
-      
+
       <div className="container relative z-10 px-6">
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="text-gradient">{t('contact.title')}</span>
             </h2>
-            <motion.div 
+            <motion.div
               className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
@@ -140,15 +140,15 @@ const ContactSection = () => {
             {/* Contact Info */}
             <div className="space-y-6">
               <ScrollReveal direction="right">
-                <motion.div 
+                <motion.div
                   className="glass rounded-2xl p-8 shadow-card"
                   whileHover={{ scale: 1.02 }}
                 >
                   <h3 className="text-2xl font-bold text-foreground mb-6">{t('contact.info')}</h3>
-                  
+
                   <div className="space-y-4">
                     {contactInfo.map((item, i) => (
-                      <motion.a 
+                      <motion.a
                         key={item.label}
                         href={item.href}
                         className="flex items-center gap-4 p-4 bg-secondary/30 rounded-xl hover:bg-primary/10 transition-colors group block"
@@ -157,7 +157,7 @@ const ContactSection = () => {
                         transition={{ delay: i * 0.1 }}
                         whileHover={{ x: -5 }}
                       >
-                        <motion.div 
+                        <motion.div
                           className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors"
                           whileHover={{ rotate: 360 }}
                           transition={{ duration: 0.5 }}
@@ -179,7 +179,7 @@ const ContactSection = () => {
 
               {/* Social Links */}
               <ScrollReveal direction="right" delay={0.1}>
-                <motion.div 
+                <motion.div
                   className="glass rounded-2xl p-8 shadow-card"
                   whileHover={{ scale: 1.02 }}
                 >
@@ -209,21 +209,21 @@ const ContactSection = () => {
 
             {/* Contact Form */}
             <ScrollReveal direction="left" delay={0.2}>
-              <motion.div 
+              <motion.div
                 className="glass rounded-2xl p-8 shadow-card h-full"
                 whileHover={{ scale: 1.02 }}
               >
                 <h3 className="text-2xl font-bold text-foreground mb-6">{t('contact.send')}</h3>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   {formFields.map((field, i) => (
-                    <motion.div 
+                    <motion.div
                       key={field.label}
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3 + i * 0.1 }}
                     >
                       <label className="block text-sm font-medium text-foreground mb-2">{field.label}</label>
-                      <input 
+                      <input
                         type={field.type}
                         name={field.name}
                         value={formData[field.name as keyof typeof formData]}
@@ -240,7 +240,7 @@ const ContactSection = () => {
                     transition={{ delay: 0.6 }}
                   >
                     <label className="block text-sm font-medium text-foreground mb-2">{t('contact.message')}</label>
-                    <textarea 
+                    <textarea
                       rows={4}
                       name="message"
                       value={formData.message}
@@ -257,7 +257,7 @@ const ContactSection = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <Button 
+                    <Button
                       type="submit"
                       disabled={isSubmitting}
                       className="w-full bg-gradient-primary text-primary-foreground font-semibold py-6 hover:opacity-90 transition-opacity relative overflow-hidden group"
@@ -270,7 +270,7 @@ const ContactSection = () => {
                         )}
                         {isSubmitting ? (t('contact.sending') || 'Sending...') : t('contact.sendBtn')}
                       </span>
-                      <motion.div 
+                      <motion.div
                         className="absolute inset-0 bg-white/20"
                         initial={{ x: '-100%' }}
                         whileHover={{ x: '100%' }}

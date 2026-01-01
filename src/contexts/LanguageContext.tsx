@@ -22,8 +22,8 @@ const translations = {
     // Hero
     'hero.name1': 'محمود محمد',
     'hero.name2': 'محمد سعيد',
-    'hero.role1': 'مطور ويب و تطبيقات',
-    'hero.role2': 'متخصص شبكات',
+    'hero.role1': 'طالب تقانة معلومات',
+    'hero.role2': 'مطور مبتدئ',
     'hero.role3': 'مصمم جرافيك',
     'hero.location': 'السودان - كوستي',
     'hero.projects': 'مشاريعي',
@@ -33,7 +33,7 @@ const translations = {
     // About
     'about.title': 'نبذة عني',
     'about.summary': 'ملخص احترافي',
-    'about.summaryText': 'طالب تقانة معلومات بجامعة النيل الأبيض، مهتم بالشبكات والذكاء الاصطناعي وتطوير الويب وتطبيقات الموبايل. لدي خبرة في تنفيذ مشاريع كاملة (مواقع + تطبيقات أندرويد + أنظمة إدارة) مع اهتمام خاص بتصميم الواجهات والهوية البصرية. أعمل حالياً على مشروع تخرج يجمع AI مع تصميم الشبكات تلقائياً.',
+    'about.summaryText': 'طالب تقانة معلومات متحفز ولدي خبرة عملية قوية في تطوير الويب، تطبيقات الموبايل، الشبكات (CCNA)، والأنظمة المدعومة بالذكاء الاصطناعي. شغوف ببناء حلول واقعية، الأتمتة، والمنصات الرقمية الحديثة. ماهر في التنفيذ التقني والتصميم الإبداعي، مع خبرة عملية في مشاريع أكاديمية ومستقلة متعددة.',
     'about.education': 'التعليم',
     'about.university': 'جامعة النيل الأبيض',
     'about.faculty': 'كلية علوم الحاسوب وتقانة المعلومات',
@@ -108,8 +108,8 @@ const translations = {
     // Hero
     'hero.name1': 'Mahmoud Mohamed',
     'hero.name2': 'Mohamed Said',
-    'hero.role1': 'Web & App Developer',
-    'hero.role2': 'Network Specialist',
+    'hero.role1': 'IT Student',
+    'hero.role2': 'Junior Developer',
     'hero.role3': 'Graphic Designer',
     'hero.location': 'Sudan - Kosti',
     'hero.projects': 'My Projects',
@@ -119,7 +119,7 @@ const translations = {
     // About
     'about.title': 'About Me',
     'about.summary': 'Professional Summary',
-    'about.summaryText': 'Information Technology student at White Nile University, interested in networking, AI, web development, and mobile apps. Experienced in executing complete projects (websites + Android apps + management systems) with special interest in UI design and branding. Currently working on a graduation project combining AI with automatic network design.',
+    'about.summaryText': 'Motivated Information Technology student with strong practical experience in web development, mobile applications, networking (CCNA), and AI-powered systems. Passionate about building real-world solutions, automation, and modern digital platforms. Skilled in both technical implementation and creative design, with hands-on experience in multiple academic and freelance projects.',
     'about.education': 'Education',
     'about.university': 'White Nile University',
     'about.faculty': 'Faculty of Computer Science & IT',
