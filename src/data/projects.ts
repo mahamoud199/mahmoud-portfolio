@@ -41,5 +41,21 @@ export const projects: Project[] = [
       { src: '/assets/projects/school/reports_overview.webp', alt: 'Reports & charts' },
       { src: '/assets/projects/school/menu.webp', alt: 'Side menu navigation' },
       { src: '/assets/projects/school/settings.webp', alt: 'Settings (theme & language)' },
-    ]}
+    ]
+  },
+  {
+    id: 'sudo-humanitarian-platform',
+    title: 'SUDO Humanitarian Platform',
+    category: 'Web',
+    tags: ['PHP', 'MySQL', 'Tailwind CSS', 'HTML5', 'CSS', 'JavaScript'],
+    descriptionAr:
+      'منصة ويب عربية RTL لإدارة العمل الإنساني في السودان، تربط المتبرعين والمستفيدين والمتطوعين وإدارة المنظمة: حملات تبرع بنسب تمويل، تبرعات إلكترونية بإيصالات QR، طلبات مساعدة متعددة الخطوات، إدارة متطوعين، مخزون إغاثي مع تنبيهات نفاد، تقارير ميدانية، ومؤشرات متابعة وتقييم. مبنية بـ PHP خام وMySQL مع نظام صلاحيات مخصص وحماية CSRF، وواجهة Tailwind عربية، وبوابة دفع محاكاة للبنوك السودانية.',
+    descriptionEn:
+      'Arabic RTL web platform for managing humanitarian work in Sudan, connecting donors, beneficiaries, volunteers and organisation management: donation campaigns with funding progress, electronic donations with QR e-receipts, multi-step aid requests, volunteer management, relief inventory with low-stock alerts, field reports, and monitoring and evaluation indicators. Built with raw PHP and MySQL (prepared statements, custom Auth with roles and CSRF protection) and Tailwind CSS, with a mock payment gateway for Sudanese banks.',
+    images: [
+      { src: '/assets/projects/sudo/sudo-campaigns.jpg', alt: 'Active campaigns with funding progress' },
+      { src: '/assets/projects/sudo/sudo-receipts.png', alt: 'Donor e-receipt with QR code' },
+      { src: '/assets/projects/sudo/sudo-dashboard.png', alt: 'Admin dashboard' }
+    ]
+  },
 ]
